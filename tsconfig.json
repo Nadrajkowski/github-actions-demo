@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6", // Set the target ECMAScript version
+        "module": "commonjs", // Use CommonJS modules
+        "outDir": "./dist", // Output directory for compiled files
+        "rootDir": "./src", // Root directory for source files
+        "strict": true, // Enable strict type checking
+        "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+        "resolveJsonModule": true, // Enable importing JSON files
+        "baseUrl": ".", // Base URL for module resolution
+        "paths": {
+            "*": ["node_modules/*", "src/types/*"] // Additional module resolution paths
+        }
+    },
+    "include": ["src/**/*.ts"], // Include TypeScript source files
+    "exclude": ["node_modules"] // Exclude node_modules directory
+}
